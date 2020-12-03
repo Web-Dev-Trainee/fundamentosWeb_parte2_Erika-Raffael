@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>8 Tipos de dados de Javascript</title>
+</head>
+<body>
+  <h1>01: Quais são os oito tipos de dados de javascript? Veja no Console -></h1>
+
+
+  
+  <script>
+  console.log("------01: Quais são os oito tipos de dados de javascript?--------")
+
+    //numero:
+  let n1 = 10
+  let n2 = 15
+  console.log(`01 (Numero)-> A soma de dois valores é: ${n1 + n2}`);
+  
+  //null:
+  let a = null;
+  console.log(`02 (Null)-> O valor da variavel é : ${a}`);
+
+  //typeof:
+   console.log(`03 (typeof)-> O tipo da variavel (a) é: ${typeof a}`);
+
+  //bigInt:
+  let maior = BigInt(Number.MAX_SAFE_INTEGER);
+  console.log("04 (BigInt)->A variavel vem com o (n) no final para BigInt:");
+  console.log(maior);
+
+  ///String:
+
+  let usuario = {
+    nome: 'Erika Santana',
+    cidade: 'Ananindeua',
+    estado: 'Pará'
+    
+  };
+  console.log("05 (String)->");
+  console.log(`Olá, me chamo ${usuario.nome}. Eu moro na cidade de ${usuario.cidade}-${usuario.estado}`);
+
+  //Boolean:
+  let bolo_chocolate = true ;
+  let bolo_morango = false;
+  
+  console.log("06 (Boolean)->");
+
+  if (bolo_chocolate && bolo_morango) {
+    console.log("Bolo de chocolate e bolo de morango são true")
+  } else {
+    console.log("So um bolo é true")
+  };
+
+  //Undefined:
+  let carro = {
+    modelo: 'Fiesta',
+    fabricante: 'Ford',
+    NomeCompleto: () => {
+      return `${this.fabricante} ${this.modelo}`
+    }
+  }
+  console.log("07 (Undefined)->");
+  console.log(carro.NomeCompleto());
+
+  //Objects:
+  let object = {
+    name: 'Erika',
+    idade: '40'
+  }
+  console.log("08 (Objects)->")
+ console.log(object);
+
+
+
+
+
+  </script>
+</body>
+</html>

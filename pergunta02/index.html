@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>02 - Qual tipo de dados NÃO é primitivo?</h1>
+
+  <p> Os tipos de dados não primitivos, normalmente são os 
+    vetores, matrizes, classes, enumerações, etc.
+    que costumam ser estruturas de dados mais complexas do 
+    que os tipos de dados primitivos.
+  </p>
+
+  <script>
+    let sapatos = {cor: "rosa", marca: "melissa", tamanho: 36};
+    sapatos.tamanho = 37;
+
+    console.log(sapatos.tamanho);
+    delete sapatos.tamanho;
+
+    console.log(sapatos.tamanho);
+    console.log(sapatos);
+
+
+    let vetor = new Array(1, 2, 3, 2, 7);
+    vetor.push(9, 5);
+    console.log(vetor);
+
+  </script>
+</body>
+</html>
