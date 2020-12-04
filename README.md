@@ -6,5 +6,5 @@
 <img src="./img/perg04.png" />
 <img src="./img/perg05.png" />
 <h3>Respostas - Raffael</h3>
-<img src="./img/perg10.png" width="500" />
+<img src="./img/perg10.png" width="800" />
 
