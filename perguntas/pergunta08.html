@@ -7,5 +7,24 @@
 </head>
 <body>
   <h1>08 - O que são métodos?</h1>
+
+  <p>
+    Métodos em Javascript são funções invocadas por objetos. Para criar um 
+    novo método, basta atribuir uma função a um nome no objeto utilizando 
+    também o operador “.” como ocorre com as propriedades.
+  </p>
+
+  <script>
+    function pessoa(id, nome, idade) {
+      this.id = id;
+      this.nome = nome;
+      this.idade = idade;
+    }
+     let pessoa01 = new pessoa(1, "Adrion", 50 );
+
+     console.log(pessoa01.nome);
+     console.log(pessoa01.idade);
+    
+  </script>
 </body>
 </html>

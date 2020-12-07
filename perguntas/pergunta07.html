@@ -7,5 +7,50 @@
 </head>
 <body>
   <h1>07 - Qual é a diferença entre slice / substring / substr?</h1>
+
+  <p>O método slice() retorna uma cópia de parte de um array a 
+    partir de um subarray criado entre as posições início e fim 
+    (fim não é necessário) de um array original. O Array original 
+    não é modificado.
+  </p>
+  <p>
+    O método substring() retorna a parte da string entre os 
+    índices inicial e final, ou até o final da string.
+  </p>
+  <p>
+    O método substr() retorna uma parte da string, começando no 
+    índice especificado e estendendo-se por um determinado número 
+    de caracteres posteriormente.
+  </p>
+
+
+  <script>
+    const frutas = ['Banana', 'Manga', 'Açaí', 'Maçã', 'Cupuaçu'];
+    const frutasParaenses = frutas.slice(2, 4); 
+
+    console.log(`Exemplo Slice: ${frutasParaenses}` );
+
+    //------------------------------------
+
+    const nome01 = "Érika";
+
+    console.log("Exemplo substring: Érika ")
+    //mostra "Éri"
+    console.log(nome01.substring(0, 3));
+    console.log(nome01.substring(3, 0));
+    
+    //mostra "ka"
+    console.log(nome01.substring(3,5));
+    console.log(nome01.substring(5,3));
+
+    //------------------------------------
+    
+    const nome02 = "Santana";
+
+    console.log("Exemplo de substr: Santana ");
+    //mostra "San"
+    console.log(nome02.substr(0, 3));
+
+  </script>
 </body>
 </html>
