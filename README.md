@@ -11,4 +11,10 @@
 <img src="./img/perg09.png" width="700" />
 <h3>Respostas - Raffael</h3>
 <img src="./img/perg10.png" width="700" />
-
+<img src="./img/perg11.png" width="700" />
+<img src="./img/perg13.png" width="700" />
+<img src="./img/perg14.png" width="700" />
+<img src="./img/perg15.png" width="700" />
+<img src="./img/perg16.png" width="700" />
+<img src="./img/perg17.png" width="700" />
+<img src="./img/perg18.png" width="700" />

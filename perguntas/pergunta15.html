@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <h1>Pergunta 15: Qual a sintaxe para uma instrução switch?</h1>
+  <p>A condicional switch avalia uma expressão, combinando o valor da expressão para um cláusula case, e executa as
+      instruções associadas ao case <br> exemplo da sintaxe:</p>
+  <code>
+      switch (expressão) { <br>
+         &nbsp;&nbsp;case valor1: <br>
+          &nbsp;&nbsp; //Instruções executadas quando o resultado da expressão for igual á valor1 <br>
+          &nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+          &nbsp;&nbsp; case valor2:<br>
+          &nbsp;&nbsp; //Instruções executadas quando o resultado da expressão for igual á valor2<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+          &nbsp;&nbsp;&nbsp;&nbsp; ...<br>
+          &nbsp;&nbsp; default:<br>
+          &nbsp;&nbsp;  //Instruções executadas quando o valor da expressão é diferente de todos os cases<br>
+          &nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+}
+  </code>
+
+  <p>Exemplo de Switch:</p>
+  <code>
+      const expr = 'Banana'; <br>
+      switch (expr) { <br>
+      &nbsp;&nbsp;case 'Laranja': <br>
+      &nbsp;&nbsp;&nbsp;&nbsp; console.log('As Laranjas estão custando R$4,50.'); <br>
+      &nbsp;&nbsp;&nbsp;&nbsp;break;<br>
+      &nbsp;&nbsp;case 'Morango': <br>
+      &nbsp;&nbsp;case 'Banana': <br>
+      &nbsp;&nbsp;&nbsp;&nbsp; console.log('Os Morangos e Bananas estão custando R$12,70.');<br>
+      &nbsp;&nbsp;&nbsp;&nbsp; break;<br>
+      &nbsp;&nbsp;default:<br>
+      &nbsp;&nbsp;&nbsp;&nbsp; console.log(`Desculpe, mas estamos sem ${expr}.`);<br>
+      }<br>
+  </code>
+
+  <script>
+      const expr = 'Banana';
+      switch (expr) {
+          case 'Laranja':
+              console.log('As Laranjas estão custando R$4,50.');
+              break;
+          case 'Morango':
+          case 'Banana':
+              console.log('Os Morangos e Bananas estão custando R$12,70.');
+              break;
+          default:
+              console.log(`Desculpe, mas estamos sem ${expr}.`);
+      }
+  </script>
+</body>
+</html>
