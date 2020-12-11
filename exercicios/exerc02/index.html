@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>repl.it</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+    <p>Verifique o console desta página</p>
+    <script src="script.js"></script>
+
+    <script>
+        // Não se preocupe com este código aqui, apenas verificando seus resultados :)
+        // Entendi, você está curioso,
+        // mas está tudo bem se você não entender o que está acontecendo aqui, você aprenderá com o tempo.
+
+        let numCorrect = 0;
+        let numChecked = 0;
+
+        const result = numberChecker();
+        console.log(`Você botou: ${number}, e o resultado foi: ${result}`);
+        console.log("\n\n\n Resultados Teste: \n")
+
+        function checkNumberChecker(num) {
+            number = num;
+            const result = numberChecker();
+            if ((result === true && number >= 10) ||
+                (result === false && number < 10)) {
+                numCorrect++;
+                console.log(`Se eu botar ${number}, o resultado será ${result}. Isto está correto!`);
+            } else {
+                console.error(`Eu botei "${number}", e recebi "${result}" como resultado, eu deveria ter recebido "${number >= 10}" em vez daquilo`);
+            }
+
+            numChecked++
+            console.log("\n");
+        }
+
+        checkNumberChecker(2)
+        checkNumberChecker(12)
+        checkNumberChecker(6)
+        checkNumberChecker(10)
+        checkNumberChecker(9)
+
+        if (numCorrect === numChecked) {
+            console.log("Você passou em todos os testes, continue para a próxima lição!")
+        } else {
+            console.log(`Você falhou ${numChecked - numCorrect} por ${numChecked}, porfavor tente novamente`);
+        }
+
+    </script>
+</body>
+
+</html

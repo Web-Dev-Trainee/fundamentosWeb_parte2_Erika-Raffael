@@ -20,6 +20,39 @@
 <img src="./img/perg18.png" width="700" />
 <h2>Exercicios - parte 02</h2>
 <h3>Respostas Raffael</h3>
+<p>Exercicio 01</p>
+<p>
+A função abaixo deveria está registrando o número 2, porém não está,
+veja se você consegue consertar!<br>
+Certifique-se de corrigi-lo no espírito do código, não codifique o resultado permanentemente.
+</p>
+<img src="./img/exerc01.png" width="700" />
+<p>
+Resolução: <br>
+Remover as apas das variáveis
+</p>
+<img src="./img/exerc01_01.png" width="700" />
+
+<p>Exercicio 02</p>
+<p>
+O código abaixo diz ao navegador para pedir um número
+então se esse número for `6`, ele retorna` verdadeiro`, caso contrário, retorna `falso` <br>
+Altere este código para que retorne `verdadeiro` quando o número for maior ou igual a 10 e falso se for menor que 10
+</p>
+<img src="./img/exerc02.png" width="700" />
+<img src="./img/exerc02_01.png" width="700" />
+<p>
+Fazendo a correção no código:
+</p>
+<p>Antes:</p>
+<img src="./img/exerc02_02.png" width="700" />
+<p>Depois:</p>
+<img src="./img/exerc02_03.png" width="700" />
+<p>
+Resultado após alteração no código:
+</p>
+<img src="./img/exerc02_04.png" width="700" />
+<img src="./img/exerc02_05.png" width="700" />
 
 
 <h3>Respostas Érika</h3>
